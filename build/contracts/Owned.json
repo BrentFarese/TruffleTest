@@ -1,0 +1,17 @@
+{
+  "contract_name": "Owned",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "owned",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60b28061001e6000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663df32754b8114603c575b600080fd5b3415604657600080fd5b604c604e565b005b6000805473ffffffffffffffffffffffffffffffffffffffff19163373ffffffffffffffffffffffffffffffffffffffff161790555b5600a165627a7a723058200f9fb68a048d0c968b9a5814e571718eeb13d347582f0f0116cd4fbb25377bed0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1503932014161
+}

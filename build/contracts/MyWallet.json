@@ -1,0 +1,193 @@
+{
+  "contract_name": "MyWallet",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "name": "_reason",
+          "type": "string"
+        }
+      ],
+      "name": "spendMoneyOn",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "owned",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "proposal_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "confirmProposal",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "receivedFunds",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_reason",
+          "type": "string"
+        }
+      ],
+      "name": "proposalReceived",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "sendMoneyPlain",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b61058c8061001f6000396000f3006060604052361561005f5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663192997e781146100b157806341c0e1b514610128578063df32754b1461013d578063f4a4f4d214610152575b5b60003411156100ae577f3f638da77ee3d49db2211092b965c9c7c2fcb68fea5e8f85986200f8776f6a1d3334604051600160a060020a03909216825260208201526040908101905180910390a15b5b005b34156100bc57600080fd5b61011660048035600160a060020a03169060248035919060649060443590810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965061017c95505050505050565b60405190815260200160405180910390f35b341561013357600080fd5b6100ae6103b8565b005b341561014857600080fd5b6100ae6103e0565b005b341561015d57600080fd5b61016860043561040b565b604051901515815260200160405180910390f35b60008054819033600160a060020a039081169116141561021657600160a060020a03851684156108fc0285604051600060405180830381858888f1935050505090508015156101ca57600080fd5b7f44f9cec4190ec013b3b048b609ddf6b119bfa55c3a6e0deb6f0b1eccb93b612b3386604051600160a060020a039283168152911660208201526040908101905180910390a15b6103af565b600180548101905560a06040519081016040908152600160a060020a03338116835287166020808401919091528183018790526060830186905260006080840181905260015481526002909152208151815473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0391909116178155602082015160018201805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055604082015181600201556060820151816003019080516102e69291602001906104c0565b506080820151600491909101805460ff191691151591909117905550600160a060020a038581169033167f24bb5c74895c3fd8414e0d433edece1a9f0833ae289514c568d306738c5f1a778560405160208082528190810183818151815260200191508051906020019080838360005b8381101561036f5780820151818401525b602001610356565b50505050905090810190601f16801561039c5780820380516001836020036101000a031916815260200191505b509250505060405180910390a360015491505b5b509392505050565b60005433600160a060020a03908116911614156103dd57600054600160a060020a0316ff5b5b565b6000805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03161790555b565b60008054819033600160a060020a03908116911614156104b6575060008281526002602052604090208054600160a060020a0316156104b657600481015460ff1615156001146104b65760048101805460ff191660019081179091558101546002820154600160a060020a039091169080156108fc0290604051600060405180830381858888f19350505050156104a557600191506104b6565b60048101805460ff19169055600091505b5b5b5b5b50919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061050157805160ff191683800117855561052e565b8280016001018555821561052e579182015b8281111561052e578251825591602001919060010190610513565b5b5061053b92915061053f565b5090565b61055d91905b8082111561053b5760008155600101610545565b5090565b905600a165627a7a723058205873dde101623a90271267595386c75976318dfd90e10486bc462f975435dcda0029",
+  "networks": {
+    "1503931976084": {
+      "events": {
+        "0x3f638da77ee3d49db2211092b965c9c7c2fcb68fea5e8f85986200f8776f6a1d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "receivedFunds",
+          "type": "event"
+        },
+        "0x24bb5c74895c3fd8414e0d433edece1a9f0833ae289514c568d306738c5f1a77": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_reason",
+              "type": "string"
+            }
+          ],
+          "name": "proposalReceived",
+          "type": "event"
+        },
+        "0x44f9cec4190ec013b3b048b609ddf6b119bfa55c3a6e0deb6f0b1eccb93b612b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_to",
+              "type": "address"
+            }
+          ],
+          "name": "sendMoneyPlain",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x19e3a74b275a99663da1209964a2b14047d2c150",
+      "updated_at": 1503932055978
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1503932055978
+}
